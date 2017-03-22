@@ -128,7 +128,6 @@
 
 	//判断盒子移入移出的方向  fbUi.MouseDirection(".entrance-item",{enter:function($element, dir,i){console.log(dir,i)},leave:function($element, dir,i){console.log(dir,i) }})
 	fbUi.prototype.MouseDirection = function (element, opts) {
-
 		    var $element = $(element);
 
 		    //enter leave代表鼠标移入移出时的回调
@@ -212,7 +211,7 @@
 
 	};
 
-	//在线客户   fbUi.online();
+	//在线客服   fbUi.online();
 	fbUi.prototype.online = function(){
 		$(".fb-aFloatTools_Show").click(function(){
 	      $('.fb-divFloatToolsView').animate({width:'show',opacity:'show'},100,function(){$('.fb-divFloatToolsView').show();});
