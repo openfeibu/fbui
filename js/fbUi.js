@@ -207,8 +207,7 @@
 		        var r = calculate(this, e);
 		        opts.leave($element, dirs[r],i);
 		    });
-		 
-
+		
 	};
 
 	//在线客服   fbUi.online();
