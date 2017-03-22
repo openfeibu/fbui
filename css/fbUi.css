@@ -14,8 +14,6 @@ a,img{border:0;}
 html,body{font-size:12px;color: #222;font-family: Microsoft YaHei,KaiTi,Helvetica Neue,Helvetica,Roboto,Heiti SC,STHeiTi,Arial,sans-serif;}
 .clearfix:after{display:block;clear:both;height:0;visibility:hidden;font-size:0;line-height:0;content:''}
 .clearfix{zoom:1}
-.red{color:#f85b4d}
-.blue{color:#5079d5}
 input::-moz-placeholder, textarea::-moz-placeholder { color:#fff; }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #fff }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #fff; }
@@ -182,10 +180,29 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 .fb-center{
     text-align: center;
 }
-.fb-color-blue{color: #20A0FF;}
+.fb-color-info{color: #20A0FF;}
 .fb-color-success{color: #13CE66;}
-.fb-color-Warning{color: #F7BA2A;}
+.fb-color-warning{color: #F7BA2A;}
 .fb-color-danger{color: #FF4949;}
+
+/*按钮*/
+button{width: 88px;height: 36px;border:1px solid #bfcbd9;border-radius: 5px;background: none;color:#1f2d3d; }
+button:hover{border:1px solid #20A0FF;color: #20A0FF;}
+.fb-buttonSize-large{width: 104px;height: 40px;font-size: 16px;}
+.fb-buttonSize-medium{width: 88px;height: 36px;font-size: 14px;}
+.fb-buttonSize-small{width: 68px;height: 28px;font-size: 12px}
+.fb-buttonSize-mini{width: 58px;height: 22px;font-size: 10px;}
+.fb-buttonFill{background: #20A0FF;color: #fff;}
+.fb-buttonFill:hover{border:1px solid #4db3ff;background: #4db3ff;color: #fff;}
+.fb-buttonFill-info{background: #20A0FF;color: #fff;border-color:#20A0FF;}
+.fb-buttonFill-success{background: #13CE66;color: #fff;border-color:#13CE66;}
+.fb-buttonFill-warning{background: #F7BA2A;color: #fff;border-color:#F7BA2A;}
+.fb-buttonFill-danger{background: #FF4949;color: #fff;border-color:#FF4949;}
+.fb-buttonFill-info:hover{background: #4db3ff;color: #fff;border:none;}
+.fb-buttonFill-success:hover{background: #42d885;color: #fff;border-color:#42d885;}
+.fb-buttonFill-warning:hover{background: #f9c855;color: #fff;border-color:#f9c855;}
+.fb-buttonFill-danger:hover{background: #ff6d6d;color: #fff;border-color:#ff6d6d;}
+
 /*轮播图*/
 .fb-banner-fade{width: 100%;height: 500px;overflow: hidden;}
 .fb-banner-fade .fb-banner-fade-item{width: 100%;overflow: hidden;height: 100%;}
