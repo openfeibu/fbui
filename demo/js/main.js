@@ -197,4 +197,8 @@ $(function(){
 			}
 		}
 	})
+	//艺术品收藏
+	$(".worksCollection").on("click",function(){
+		$(this).toggleClass("active");
+	})
 })

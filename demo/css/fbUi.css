@@ -302,5 +302,5 @@ button:hover{border:1px solid #20A0FF;color: #20A0FF;}
 .fb-smallImg{width: 660px;height: 440px;}
 .fb-smallImg img{width: 100%;height: 100%;}
 .fb-imgHover{cursor: move;display: none;width: 240px;height: 240px;background: #fff;opacity: 0.5;z-index: 999;top:0;left:0;}
-.fb-bigImg{display: none;top:80px;left:720px;width:360px;height: 360px;overflow: hidden;}
+.fb-bigImg{display: none;top:80px;left:720px;width:360px;height: 360px;overflow: hidden;z-index: 999;}
 .fb-bigImg img{width:990px;height: 660px;}
