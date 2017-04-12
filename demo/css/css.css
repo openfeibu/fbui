@@ -384,10 +384,9 @@ input:checked{background: #000}
 .guessLike{}
 .guessLike .guessLike-title{height: 60px;line-height: 60px;text-align: center;color: #333;}
 .guessLike .guessLike-group{text-align: center;}
-.guessLike .guessLike-item{width: 220px;margin:0 4px;}
+.guessLike .guessLike-item{width: 220px;margin:0 2px;border:2px solid #fff;}
 .guessLike .guessLike-item .works-img{width: 220px;height: 220px;background-size:auto 100%;}
-.guessLike .guessLike-item .works-con{text-align: left;}
+.guessLike .guessLike-item .works-con{text-align: left;text-indent: 1em;}
 .guessLike .guessLike-item .works-con .name{color: #666;line-height: 30px;}
 .guessLike .guessLike-item .works-con .money{color: #333333;line-height: 30px;}
-.guessLike .guessLike-item:hover{background: #f1c362}
-.guessLike .guessLike-item:hover .name,.guessLike .guessLike-item:hover .money{color: #fff}
+.guessLike .guessLike-item:hover{border:2px solid #f1c362}
