@@ -69,10 +69,10 @@
     fbUi.waterfall = function(options){
 		var defaults = {
 			el:"body",
-            width : 285,//unit: 滑动速度
-            column : 4,//unit:轮播图间隔
-            margin: 10,
-            data:null,
+            width : 285,//unit: 每个的宽度
+            column : 4,//unit:列数
+            margin: 10,//间隔
+            data:null,//数据
         };
 		var fb = $.extend(defaults, options || {});
 		var $el = $(fb.el);
