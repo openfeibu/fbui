@@ -16,3 +16,57 @@ a:hover{color: #c6ae7c !important;}
 .padd100{padding-left:100px;padding-right: 100px;}
 .cursor-stop{cursor:url(../images/stop.png),auto;}
 .header{height: 500px;width: 100%;background:url("../images/top_bg.jpg") no-repeat center;position: relative;}
+
+
+.outArea.head {
+		height: 60px;
+	line-height: 60px;
+	background: #fff;
+}
+.inArea {
+	
+	width: 1320px;
+	margin: 0 auto;
+}
+.outArea.head >.inArea {
+	height: 60px;
+	line-height: 60px;
+}
+.outArea.head .logo {
+	vertical-align: middle;
+	float: left;
+}
+.outArea.head .login {
+	float: right;
+}
+.outArea.head .login span,
+.outArea.head .login a {
+
+	display: inline-block;
+	*display: inline;
+zoom:1;
+
+}
+.outArea.head .login a  {
+	color: #aaaaaa;
+}
+.outArea.head .login span {
+		width: 145px;
+	height: 50px;	
+	text-indent: 50px;
+	color: #333333;
+	background: transparent url('../images/icon1.png') no-repeat 10px 15px;
+}
+.outArea.contentAr1 {
+	padding-top: 15px;
+	padding-bottom: 50px;
+}
+.contentAr1 .content1 ul li{
+	margin: 15px 22px;
+display: inline-block;
+*display: inline;
+zoom:1;
+}
+.contentAr1 .content1 ul:after {
+content: ""; display: inline-block;*display:inline;*zoom:1;width: 100%;height:0;
+}
