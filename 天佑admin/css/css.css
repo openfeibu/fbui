@@ -1,0 +1,18 @@
+body{background: #eeeeee;}
+a:hover{color: #c6ae7c !important;}
+.noSelect{-moz-user-select: none;}
+.min1320{min-width: 1320px;margin:0 auto;}
+.minh340{min-height:340px;}
+.w1320{width: 1320px;margin:0 auto;}
+.w1040{width: 1040px;margin:0 auto;}
+.w1250{width: 1250px;margin:0 auto;}
+.z999{z-index: 999;}
+.m-200{margin-top: -200px;}
+.padd120{padding-left:120px;padding-right: 120px;}
+.padd30{padding-left:30px;padding-right: 30px;}
+.padd40{padding-left:30px;padding-right: 30px;}
+.padd60{padding-left:60px;padding-right: 60px;}
+.padd80{padding-left:80px;padding-right: 80px;}
+.padd100{padding-left:100px;padding-right: 100px;}
+.cursor-stop{cursor:url(../images/stop.png),auto;}
+.header{height: 500px;width: 100%;background:url("../images/top_bg.jpg") no-repeat center;position: relative;}
