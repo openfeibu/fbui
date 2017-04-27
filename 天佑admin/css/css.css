@@ -124,7 +124,7 @@ content: ""; display: inline-block;*display:inline;*zoom:1;width: 100%;height:0;
 
 }
 .content2_right_form .input_all select{
-	background: url('../images/icon2.png');
+	background: url('../images/icon2.png') no-repeat 280px ;
 	width: 300px;
 	padding: 0 10px;
 }
