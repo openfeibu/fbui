@@ -83,138 +83,272 @@ margin: 0 auto;
 .contentAr1 .content1 ul:after {
 content: ""; display: inline-block;*display:inline;*zoom:1;width: 100%;height:0;
 }
-/*--------下拉内容----------*/
-.outArea.contentAr2 .content2_left {
-	display: inline-block;
-	*display: inline;
-	zoom:1;
+/*dropAuthor*/
+
+.leftDiv {
 	width: 20%;
+	background: #eeeeee;
 }
-.content2_left a {
-	display: block;
-	text-align: center;
-	color: #333333;
-	font-size: 16px;
+.leftDiv >div {
 	margin-top: 35px;
-}
-.content2_left a:hover{
-	color: #666666!important;
-}
-.outArea.contentAr2 .content2_right {
-	display: inline-block;
-	*display: inline;
-	zoom:1;
-	width: 80%;
-	float: right;
-	background: #fff;
-}
-.content2_right_form {
-
-}
-.content2_right_form .input_all {
-	width: 100%;
-	height: 40px;
-	line-height: 40px;
-	margin-left: 100px;
-	margin-top: 22px;
-
-}
-.content2_right_form .input_all label {
-	width: 140px;
-	font-size: 14px;
-	color: #333333;
-}
-.content2_right_form .input_all input,
-.content2_right_form .input_all select{
-	border: 1px solid #dedede;
-	width: 278px;
-	height: 38px;
-	padding: 0 10px;
-	border-radius: 3px;
-
-}
-.content2_right_form .input_all select{
-	background: url('../images/icon2.png') no-repeat 280px ;
-	width: 300px;
-	padding: 0 10px;
-}
-.content2_right_form .input_all .sizetxt {
-	width: 98px;
-	height: 38px;
-	border: 1px solid #dedede;
-}
-.content2_right_form .input_all .x {
-	padding: 0;
-	margin: 0;
-	height: 38px;
-	width: 56px;
-	border: none;
 	text-align: center;
 }
-.content2_right_form .priceDiv {
-	height: 200px;
+.leftDiv >div a {
+	font-size: 16px;
+	color: #666666;
 }
-.content2_right_form .priceCon {
-	padding:20px 20px;
-	padding-top: 0;
-	background: #f9f9f9;
-	width: 390px;
-	height: 180px;
+.leftDiv >div a:hover {
+	color: #333333!important;
+}
+.rightDiv {
+	width: 80%;
+	padding-top: 20px;
+	background: #fff;
+
+}
+.rightDiv>form .input_all {
+	margin-left: 100px;
+	margin-bottom: 23px;
+}
+.rightDiv>form .input_all label {
+	    display: inline-block;
+    *display: inline;
+    *zoom:1;
+	font-size: 14px;
+	width: 135px;
+	padding-left: 10px;
+	color: #333333;
+
+}
+.rightDiv>form .input_all input,
+.rightDiv>form .input_all select{
+	width: 288px;
+	padding-left: 10px;
+	height: 38px;
+	border: 1px solid #dedede;
 	border-radius: 3px;
 }
-.content2_right_form .priceCon .priceCon_div {
-	margin: 17px 0;
+.rightDiv>form .input_all select {
+	width: 300px;
+	height: 40px;
+	vertical-align: middle;
+}
+.rightDiv>form .input_all.size >input {
+	width: 108px;
+	padding-left: 10px;
+}
+.wi430 {
 	width: 390px;
-	height: 38px;
+	padding:20px;
+	height: 160px;
+	background: #f9f9f9;
+	border-radius: 3px;
 }
-.content2_right_form .priceCon .priceCon_div label {
-	color: #333333;
-	font-size: 14px;
+.div-390 {
+	width: 390px;
+	margin-bottom: 20px;
 }
-.content2_right_form .priceCon .priceCon_div input {
-	margin-left: 40px;
-	width: 278px;
+.div-390 label{
+	width: 85px!important;
+	padding-left: 0!important;
 }
-.content2_right_form .addGoods {
+.add_adress {
+	padding-left: 255px;
 	color: #666666;
 	font-size: 14px;
-	margin-left: 260px;
-	margin-top: 16px;
-}
-.content2_right_form .addGoods:hover{
 	text-decoration: underline;
+	margin-bottom: 30px;
+	margin-top: -15px;
 }
-.content2_right_form .artDiv{height: 210px}
-.content2_right_form .artCon {
-	width: 630px;
-	height: 200px;
+.logistic {
+	padding-left:30px;margin-left:15px;width:90px;background:url('../images/icon4.png') no-repeat 10px center
+}
+.win-630 {
+	width: 600px;
+	height: 170px;
+	padding: 15px;
 	background: #f9f9f9;
-	border-radius: 3px;
 }
-.content2_right_form  .coverDiv  {
-	height: 220px;
-}
-.content2_right_form  .coverDiv .addCover {
-	height: 160px;
+.win-160 {
 	width: 160px;
-	background: #eeeeee;
+	height: 160px;
+	overflow: hidden;
+	background: #f9f9f9 url('../images/icon3.png') no-repeat center center;
 }
-.content2_right_form  .btnAll {
-	margin-bottom: 75px;
+.win-160 >span.delet {
+	position: absolute;
+	right: -9px;
+	top: -9px;
+  height: 18px;
+  width: 18px;
+  background: url('../images/delet_03.png');
 }
-.content2_right_form  .btnAll a{
+.win-160>img{
+	width: 100%;
+	height: 100%;
+}
+.btn_click {
 	width: 180px;
 	height: 40px;
-	margin-right: 30px;
-	border-radius: 3px;
+	margin: 0 15px;
 	line-height: 40px;
 	text-align: center;
-	background: #eeeeee;
+	background: #f9f9f9;
 	font-size: 14px;
-	color: #333333;
 }
-.content2_right_form  .btnAll a:hover{
+.btn_click:hover{
+	background: #f1c362!important;
+	color: #ffffff!important;
+}
+.author {
+	position: relative;
+}
+.choose_author {
+	position: absolute;
+	width: 775px;
+	height: 682px;
+	background: #fff;
+}
+/*国画*/
+.pos {
+		top: 60px;
+	left: 145px;
+	background: #fff;
+	box-shadow: 0px 1px 34px 1px #d3d3d3;
+	border-radius: 3px;
+}
+.painting {
+	width: 660px;
+	height: 160px;
+	padding: 20px 0px;
+		opacity: 0;
+transition :all .3s;
+
+}
+.painting >div {
+	width: 100%;
+	height: 120px;
+		border-bottom: 1px solid #eeeeee;
+}
+.painting >div ul {
+	height: 120px;
+	width: 640px;
+}
+.painting >div ul li a{
+	    display: inline-block;
+    *display: inline;
+    *zoom:1;
+	float: left;
+	width: 138px;
+	height: 38px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+	border: 1px solid #ededed;
+	border-radius: 3px;
+}
+.painting >div ul a:hover{
 	background: #f1c362;
-	color: white!important;
+	color: #ffffff!important;
 }
-/*ghgg*/
+.sure {
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 14px;
+	color: #333;
+	float: right;
+}
+.cancel {
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+	text-align: center;
+		font-size: 14px;
+	color: #333;
+	float: right;
+}
+/*艺术类型*/
+.artwork {
+	width: 660px;
+	height: 160px;
+	padding: 20px 0px;
+	opacity: 0;
+transition :all .3s;
+
+	z-index: 999;
+}
+.artwork >div {
+	width: 100%;
+	height: 120px;
+		border-bottom: 1px solid #eeeeee;
+}
+.artwork >div ul {
+	height: 120px;
+	width: 640px;
+}
+.artwork >div ul li a{
+	    display: inline-block;
+    *display: inline;
+    *zoom:1;
+	float: left;
+	width: 138px;
+	height: 38px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 14px;
+	border: 1px solid #ededed;
+	border-radius: 3px;
+}
+.artwork >div ul a:hover{
+	background: #f1c362;
+	color: #ffffff!important;
+}
+/*编辑艺术品*/
+.rightDiv .obj_art {
+	height: 290px;
+	width: 190px;
+	overflow: hidden;
+  left: 830px;top: 0;
+}
+.rightDiv .obj_art img {
+	width: 100%;
+	height: 100%;
+}
+.dele_art:hover {
+	background: #dc5329!important;
+}
+.shade {
+	opacity: 0;
+transition :all .3s;
+}
+.show {
+	opacity: 1;
+	transition :all .3s;
+}
+.cover {
+	width: 100%;
+	height: 285px;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: .5;
+	line-height: 290px;
+	text-align: center;
+	color: #fff;
+	/*display: none;*/
+}
+.cover-txt {
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 1;
+	text-align: center;
+	color: #fff;
+	line-height: 290px;
+}

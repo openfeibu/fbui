@@ -283,3 +283,40 @@ $(function(){
 		}
 	});
 })
+
+//弹出框
+	$(function(){
+		$('#type').click(function(){
+	
+		$('.artwork').addClass('show');
+   });
+		$('.artwork').mouseleave(function(){
+		$('.artwork').removeClass('show');
+	});
+	})
+
+		$(function(){
+		$('#matter').click(function(){
+	
+		$('.painting').addClass('show');
+   });
+		$('.painting').mouseleave(function(){
+		$('.painting').removeClass('show');
+	});
+	})
+
+
+
+//图片移出入
+           $(function(){
+              $('.obj_art').mouseenter(function(){
+              
+                $('.shade').addClass('show');
+              });
+              $('.obj_art').mouseleave(function(){
+            
+                  $('.shade').removeClass('show');
+              })
+
+ 
+            })
