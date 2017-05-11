@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="Keywords" content=""/>
+    <meta name="Description" content=""/>
+    <link rel="stylesheet" type="text/css" href="css/fbUi.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/fbUi.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+  <!--头部-->
+  <div class="outArea head">
+       <div class="inArea">
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <div class="login">
+                <span style="background: transparent url('images/icon1.png') no-repeat 10px center;">本人本人</span>
+                <a href="#">退出</a>
+            </div>
+       </div>
+  </div>
+
+  <!--头部 end-->
+  
+  <!--内容-->
+  <div class='outArea addAuthor'>
+    <div class="inArea">
+      <!--发布艺术品 left-->
+      <div class='fb-float-left leftDiv'>
+        <div><a href="#">发布艺术品</a></div>
+        <div><a href="#">编辑艺术品</a></div>
+      </div>
+      <!--发布艺术品 left end-->
+
+      <!--内容 right-->
+      <div class='fb-float-left rightDiv fb-position-relative author_right'>
+        <form action="">
+          <div class='input_all'>
+            <label for="">作者名字</label>
+            <input type="text" placeholder=''>
+          </div>
+            <div class='input_all'>
+                <label for="">出生年月日</label>
+                <select class='selet-100 borRai-l' name="" id="" style="background:url('images/icon2.png') no-repeat 80px center">
+                    <option value="">年</option>
+                </select>
+                <select class='selet-100 month' name="" id="" style="background:url('images/icon2.png') no-repeat 80px center">
+                    <option value="">月</option>
+                </select>
+                <select class='borRai-r selet-100' name="" id="" style="background:url('images/icon2.png') no-repeat 80px center">
+                    <option value="">日</option>
+                </select>
+            </div>
+          <!--国画题材-->
+          <div class='fb-clearfix input_all'>
+              <label  class='fb-float-left' for="">简介 </label>
+              <div class='win-630 fb-float-left'><textarea style="width: 100%;height: 100%;border: none"></textarea>
+              </div>
+          </div>
+          
+          <div class='fb-clearfix input_all'>
+              <label  class='fb-float-left' for=""></label>
+              <div class='fb-inlineBlock fb-position-relative mar-r-20'>
+
+              </div>
+
+              <div class='fb-inlineBlock fb-position-relative mar-r-20'>
+              </div>
+          </div>
+          <div class="input_all ">
+              <a href="#" class='fb-inlineBlock btn_click'>确认更改</a>
+            <a href="#" class='fb-inlineBlock btn_click'>重置</a>
+            <a href="#" class='fb-inlineBlock btn_click dele_art'>删除该作者</a>
+          </div>
+        </form>
+          <a href="" class='fb-inlineBlock fb-position-absolute author_right perPhoto'>
+
+              <div >
+                  <!-- <div class='cover fb-position-absolute'></div> -->
+
+                  <p class='cover-txt fb-position-absolute'>上传 头像</p>
+                  <div class='perPhot_cover' id="perPhot_cover">
+
+                  </div>
+              </div>
+          </a>
+      </div>
+      <!--内容 right end-->
+    </div>
+  </div>
+  <!--内容 end-->
+
+</body>

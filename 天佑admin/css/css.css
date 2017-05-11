@@ -352,3 +352,143 @@ transition :all .3s;
 	color: #fff;
 	line-height: 290px;
 }
+
+/*发布活动  陈设案例*/
+/*统一样式*/
+.return-page {
+	width: 100%;
+	height: 40px;
+	padding-left: 57px;
+	
+	line-height: 40px;
+	background:url('../images/icon8.png') no-repeat 30px center ;
+}
+.return-page a {
+	font-size: 14px;
+	color: #aaaaaa;
+}
+.borRai-3 {
+border-radius: 3px;
+}
+.borRai-l{
+	border-bottom-left-radius: 3px!important;
+	border-top-left-radius: 3px!important;
+}
+.borRai-r{
+	border-bottom-right-radius: 3px!important;
+	border-top-right-radius: 3px!important;
+}
+.leftDiv.publishAct_lefthead> div{
+	margin-top: 23px;
+}
+.leftDiv.publishAct_lefthead a:hover{
+	font-weight: bolder;
+	color: #333333;
+}
+.leftDiv.publishAct_lefthead> div:nth-child(1) {
+	margin-top: 35px;
+}
+.publishAct_right .input_all .selet-100 {
+	width: 101px;
+	height:40px;
+	margin:0 -2px;
+	border-radius: 0;
+}
+.bor-col {
+  border: 1px solid #dedede;
+}
+.win-720 {
+	width: 720px;
+	overflow: hidden;
+}
+.hei-580 {
+	height: 580px;
+}
+.write {
+		width: 720px;
+	height: 580px;
+overflow-y:scroll;
+}
+.write textarea {
+	padding: 10px;
+		width: 100%;
+	height:100%;
+	border: none;
+}
+.writeTitle {
+	border-bottom: 1px solid #dedede;
+	padding-left: 20px;
+	height: 40px;
+}
+.writeTitle a {
+line-height: 40px;
+margin-right: 40px;
+}
+.upload {
+	width: 163px;
+	height: 163px;
+	top: 60px;
+	left: 820px;
+	z-index: 999;
+	background: #eeeeee;
+}
+.upload >div {
+	height: 100%;
+}
+.upload img {
+	width: 100%;
+	height: 100%;
+}
+.dele_art:hover {
+	background: #dc5329!important;
+}
+.upload .cover {
+	width: 100%;
+	height: 163px;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: .5;
+	line-height: 290px;
+	text-align: center;
+}
+.upload .cover-txt {
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 1;font-size: 14px;
+	text-align: center;
+	color: #333333;
+	line-height: 163px;
+}
+.upload_cover {
+		height: 100%;
+	width: 100%;
+	background: #000;
+	opacity: 0;
+}
+.upload_cover:hover {
+opacity: .2;
+}
+
+/*发布活动资讯*/ 
+.win-500{
+	width: 500px!important;
+}
+.edit-upload {
+	width: 163px;
+	height: 110px;
+		top: 60px;
+	left: 820px;
+	z-index: 999;
+	background: #eeeeee;
+}
+.edit-upload >div {
+		width: 100%;
+	height: 100%;
+}
+.edit-upload .cover_hover {
+	width: 100%;
+	height: 100%;
+	line-height: 110px;
+}
