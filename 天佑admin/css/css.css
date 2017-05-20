@@ -99,6 +99,7 @@ content: ""; display: inline-block;*display:inline;*zoom:1;width: 100%;height:0;
 }
 .leftDiv >div a:hover {
 	color: #333333!important;
+	font-weight: 600!important;
 }
 .rightDiv {
 	width: 80%;
@@ -169,12 +170,28 @@ content: ""; display: inline-block;*display:inline;*zoom:1;width: 100%;height:0;
 	padding: 15px;
 	background: #f9f9f9;
 }
+.win-510 {
+	width: 510px;
+	height: 170px;
+	padding: 15px;
+	background: #f9f9f9;
+}
 .win-160 {
 	width: 160px;
 	height: 160px;
 	overflow: hidden;
 	background: #f9f9f9 url('../images/icon3.png') no-repeat center center;
 }
+.win-160-w {
+	width: 160px;
+	height: 160px;
+	overflow: hidden;
+}
+.win-160-w >img {
+	width: 100%;
+	height:100%;
+}
+
 .win-160 >span.delet {
 	position: absolute;
 	right: -9px;
@@ -478,17 +495,697 @@ opacity: .2;
 .edit-upload {
 	width: 163px;
 	height: 110px;
-		top: 60px;
-	left: 820px;
+		top: 20px;
+	right: 100px;
 	z-index: 999;
+	overflow: hidden;
 	background: #eeeeee;
+}
+.top-60 {
+	top:60px;
 }
 .edit-upload >div {
 		width: 100%;
 	height: 100%;
 }
-.edit-upload .cover_hover {
+.edit-upload .img_div >img {
+	height: 100%;
+	width: 100%;
+}
+.edit-upload >div .cover{
+	width: 100%;
+	height: 110px;
+	top: 0;
+	left: 0;
+	background: #000;
+   opacity: 0;
+	transition :all .3s;
+	line-height: 110px;
+	text-align: center;
+}
+.edit-upload >div .cover-txt {
+	line-height: 110px;
+}
+.edit-upload .cover:hover {
+	opacity: .4;
+	transition :all .3s;
+	line-height: 110px;
+}
+.hei-180 {
+	height: 180px;
+}
+.editShowSer_btnDiv {
+	margin-top: 170px;
+}
+/*选取编辑内容*/
+.publishAct_choseEditCon .pushTime {
+	padding-left: 20px;
+	margin-left: 20px;
+	width: 178px;
+	height:38px;
+	line-height:38px;
+	border: 1px solid #f0f0f0;
+	background: url("../images/icon2.png") no-repeat 158px center;
+}
+.publishAct_choseEditCon .sear {
+	margin-right: 100px;
+	padding-left: 20px;
+	width: 390px;
+	height:38px;
+	line-height:38px;
+	border: 1px solid #f0f0f0;
+	background: url("../images/search.png") no-repeat 360px center;
+}
+.publishAct_choseEditCon .itemDiv {
+	margin: 0 auto;
+	margin-bottom: 60px;
+    margin-top: 20px;
+	cursor: pointer;
+}
+.publishAct_choseEditCon .itemDiv .item {
+	margin-left:23px;
+	margin-bottom: 20px;
+    width: 280px;
+    height:360px;
+    border:1px solid #dedede;
+    overflow: hidden;
+}
+.publishAct_choseEditCon .itemDiv .item_title {
+	width: 92%;
+	height: 40px;
+	padding-left: 15px;
+	padding-right: 10px;
+	line-height:40px;
+}
+.publishAct_choseEditCon .itemDiv .item_title h2 {
+	font-size: 14px;
+	color: #333;
+	font-weight: 500;
+}
+.publishAct_choseEditCon .itemDiv .item_title span {
+	font-size: 12px;
+	color: #aaaaaa;
+}
+.publishAct_choseEditCon .itemDiv .item_img {
+    height: 160px;
+    width: 100%;
+}
+.publishAct_choseEditCon .itemDiv .item_img>img {
+    width: 100%;
+    height: 100%;
+}
+.publishAct_choseEditCon .itemDiv .item_txt {
+    height: 100px;
+		padding: 10px;
+	padding-right: 0;
+}
+.publishAct_choseEditCon .itemDiv .item_txt p {
+ color: #333333;
+	font-size: 14px;
+	line-height:20px;
+}
+.publishAct_choseEditCon .itemDiv .item_hand {
+	width: 100%;
+	height: 40px;
+	line-height:40px;
+	background: url("../images/line.png") no-repeat center center;
+}
+.publishAct_choseEditCon .item_hand>a {
+	width: 48%;
+	height:40px;
+}
+.publishAct_choseEditCon .item_hand .pen {
+	background: url("../images/delete_03.png") no-repeat center center;
+}
+.publishAct_choseEditCon .item_hand .transh {
+	background: url("../images/delete_05.png") no-repeat center center;
+}
+/*选取编辑内容 end*/
+
+/*==========================================================================================================*/
+/*==========================================================================================================*/
+/*作者界面*/
+.author_right .input_all .selet-100 {
+	width: 101px;
+	height:40px;
+	margin:0 -2px;
+	border-radius: 0;
+}
+.perPhoto {
+	width: 163px;
+	height: 163px;
+	top: 20px;
+	right:60px;
+	z-index: 999;
+	background: #eeeeee;
+}
+.perPhoto >div {
+	height: 100%;
+}
+.perPhoto img {
 	width: 100%;
 	height: 100%;
-	line-height: 110px;
+}
+.dele_art:hover {
+	background: #dc5329!important;
+}
+.perPhoto .cover {
+	width: 100%;
+	height: 163px;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: .5;
+	line-height: 290px;
+	text-align: center;
+}
+.perPhoto .cover-txt {
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 1;font-size: 14px;
+	text-align: center;
+	color: #333333;
+	line-height: 163px;
+}
+.perPhot_cover {
+	height: 100%;
+	width: 100%;
+	background: #000;
+	opacity: 0;
+}
+.perPhoto_cover:hover {
+	opacity: .2;
+}
+.mar-r-20 {
+	margin-right: 20px;
+}
+
+/*===============================设置=============================================*/
+/*安全设置 page*/
+.get_code {
+	background: #f1c362;
+	border-radius: 3px;
+	width: 120px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 14px;
+	margin-left: 30px;
+}
+.win-120-w {
+	width: 120px;
+}
+.hei-40-h {
+	height: 40px;
+	line-height:40px;
+}
+/*艺术馆设置*/
+.add-account {
+	width: 770px;
+}
+.add-account li{
+	position: relative;
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+	vertical-align: middle;
+	margin-right: 45px;
+	margin-bottom: 17px;
+	width: 175px;
+	height: 40px;
+	line-height:40px;
+	cursor: pointer;
+	background: url("../setting_images/qq.png") no-repeat 5px center;
+}
+.add-account li dd {
+	text-indent: 60px;
+}
+.add-account li a {
+	width: 18px;
+	height: 18px;
+	top: -9px;
+	right: 0;
+	background: url("../images/delet_03.png") no-repeat;
+}
+
+/*================退款========================*/
+.refund-title{
+	width: 100%;
+	height: 40px;
+	padding-left: 27px;
+	line-height: 40px;
+ }
+.mess-table {
+	width: 93%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 14px;
+}
+.mess-table thead tr{
+	height: 35px;
+}
+.mess-table tbody tr {
+	height: 85px;
+}
+.mess-table tbody tr td {
+	background: url("../images/td_line.png") no-repeat 0 center;
+}
+.mess-table tbody tr td:first-child {
+	background: none;
+}
+.mess-table tbody tr td:last-child{
+	border-right: none;
+}
+.mess-table tr .td1 >div {
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+	vertical-align: middle;
+	height: 65px;
+	width: 65px;
+	border-radius: 50%;
+
+}
+.mess-table tr .td1 >p {
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+	vertical-align: middle;
+	height: 65px;
+	width: 110px;
+}
+.mess-table tr .td1 >p span {
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+
+}
+.mess-table .span_username {
+vertical-align: top;
+}
+.mess-table .span_district {
+	vertical-align: bottom;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+.mess-table .col1 {
+	width: 18%;
+}
+.mess-table .col2 {
+	width: 20%;
+}
+.mess-table .col3,.mess-table .col4 {
+	width: 10%;
+}
+.mess-table .col5 {
+	width: 27%;
+}
+.mess-table .col6 {
+	  width: 14%;
+}
+.pageDiv {
+	height: 80px;
+	margin-bottom: 30px;
+	margin-right: 100px;
+	line-height: 80px;
+	text-align: right;
+}
+.pageDiv a {
+	width: 20px;
+	height: 20px;
+	border-radius: 3px;
+	background: #cccccc;
+	margin: 0 3px;
+}
+.pageDiv span {
+	margin: 0 8px;
+}
+.pageDiv .page_btn1 {
+	background:  #cccccc url("../images/lefts_page.png") no-repeat center;
+}
+.pageDiv .page_btn2 {
+	background:  #cccccc url("../images/left_page.png") no-repeat center;
+}
+
+.pageDiv .page_btn3 {
+	background:  #cccccc url("../images/right_page.png") no-repeat center;
+}
+
+.pageDiv .page_btn4 {
+	background:  #cccccc url("../images/rights_page.png") no-repeat center;
+}
+/*已处理退款*/
+.mess-table2 {
+	width: 93%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 14px;
+}
+.mess-table2 thead tr{
+	height: 35px;
+}
+.mess-table2 tbody tr {
+	height: 85px;
+}
+.mess-table2 tbody tr td {
+	background: url("../images/td_line.png") no-repeat 0 center;
+}
+.mess-table2 tbody tr td:first-child {
+	background: none;
+}
+.mess-table2 tbody tr td:last-child{
+	border-right: none;
+}
+.mess-table2 tr .td1 >div {
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+	vertical-align: middle;
+	height: 65px;
+	width: 65px;
+	border-radius: 50%;
+
+}
+.mess-table2 tr .td1 >p {
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+	vertical-align: middle;
+	height: 65px;
+	width: 110px;
+}
+.mess-table2 tr .td1 >p span {
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+
+}
+.mess-table2 .span_username {
+	vertical-align: top;
+}
+.mess-table2 .span_district {
+	vertical-align: bottom;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+.mess-table2 .col1 {
+	width: 18%;
+}
+.mess-table2 .col2 {
+	width: 20%;
+}
+.mess-table2 .col3,.mess-table .col4 {
+	width: 10%;
+}
+.mess-table2 .col5 {
+	width: 17%;
+}
+.mess-table2 .col6 {
+
+	width: 10%;
+}
+.mess-table2 .col7 {
+	width: 14%;
+}
+.prompt {
+	color: #db9502!important;
+}
+.warn {
+	color: #be0000!important;
+}
+.refund_notDealmessDetail {
+	width: 1020px;
+
+	margin:  0 auto;
+	font-size: 14px;
+	color: #333333;
+	border: 1px solid #dedede;
+	border-radius: 7px;
+}
+.hei-80 {
+	height: 80px;
+	/*line-height: 80px;*/
+}
+.bor-bot {
+	border-bottom: 1px solid #dedede;
+}
+
+.DealmessDetail_left >p {
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+	vertical-align: middle;
+	height: 65px;
+	width: 110px;
+}
+.DealmessDetail_left >p span {
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+
+}
+.span_username {
+	vertical-align: top;
+}
+.span_district {
+	vertical-align: bottom;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+.DealmessDetail_left + p {
+	line-height: 80px;
+}
+.img_right {
+	line-height: 80px;
+}
+/*========================================退款==============*/
+.refund_notDealmessDetail .text_right {
+ float: right;
+ margin-left: 20px;
+ line-height:42px;
+}
+.refund_notDealmessDetail .top_left {
+	padding-left: 20px;
+}
+.lh-80 {
+	line-height: 80px;
+}
+.refund_notDealmessDetail .proDiv {
+	
+	width: 985px;
+	padding: 20px 0;
+	margin:  0 auto;
+}
+.refund_notDealmessDetail .proDiv_clas {
+ float: left;
+
+}
+.refund_notDealmessDetail .proDiv_clas >img {
+	float: left;
+}
+.refund_notDealmessDetail .pro_detail {
+
+}
+.pro_detail>p {
+	line-height: 40px;
+}
+.pro_detail >p >span{
+	color: #aaaaaa;
+}
+.redlight-btn {
+	background: #d22c2c!important;
+}
+.redlight-btn:hover {
+	background: #d22c2c!important;
+}
+.warn-btn {
+	background: #f1c362!important;
+}
+.warn-btn:hover {
+	background: #f1c362!important;
+}
+.col-white {
+	color: #ffffff;
+}
+.refund_Detail_click {
+	margin-top: 20px;
+}
+
+
+
+
+
+/*=============数据================================================================*/
+/*艺术品数据*/
+.artdata-kindBox {
+	width: 765px;
+	height: 205px;
+	margin: 0 auto;
+}
+.artdata-kindBox .kindBox-items {
+	width: 155px;
+	height: 155px;
+	margin: 20px 15px;
+	border: 1px solid #dedede;
+	border-radius: 5px;
+}
+.artdata-kindBox .kindBox-items p {
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #dedede;
+	color:#333333;
+	font-size: 14px;
+}
+.artdata-kindBox .kindBox-items dd {
+	height: 115px;
+	line-height: 115px;
+	text-align: center;
+	font-size: 24px;
+	color: #333333;
+}
+.chart1 {
+	width: 940px;
+	padding:20px 30px;
+	height: 630px;
+	margin: 0 auto;
+	background: #f9f9f9;
+}
+.chart1 .date {
+width: 500px;
+height: 40px;
+line-height: 40px;
+font-size: 14px;
+color: #333333;
+}
+.chart1 .date >a {
+	float: left;
+	width: 88px;	
+	padding-left:10px;
+	border: 1px solid #dedede;
+	cursor: pointer;
+}
+.chart1 .date >a:hover{
+	background: #f1c362;
+	color: #ffffff!important;
+	border-color: #f1c362;
+}
+.chart1 .date > .win-200-w {
+	width: 188px
+
+}
+.sma-titleChart >p{
+font-size:12px;
+color:#333333;
+vertical-align: middle;
+}
+.sma-titleChart >span {
+	height:10px;
+	width:10px;
+	vertical-align: middle;
+
+}
+.col1 {
+	background:#f1c362;
+}
+.col2 {
+	background:#c03636;
+}
+.col3{
+	background:#1fa779;
+}
+.col4 {
+	background:#d28268;
+}
+.col5 {
+	background:#93c6ae;
+}
+.col6 {
+	background:#63a0a7;
+}
+.col7 {
+	background:#304553;
+}
+
+.main-chart {
+	width: 980px;
+	height: 450px;
+}
+.rank-list {
+	width: 1000px;
+	margin: 0 auto;
+}
+.rank-list p {
+	font-size: 14px;
+	color: #333333;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.rank-list .rank-list-content {
+	border: 1px solid #dedede;
+	margin-bottom: 80px;
+}
+.rank-list .rank-list-content .rank-list-items {
+	border-bottom: 1px solid #dedede;
+	padding: 15px 20px;
+}
+.rank-list-items >.right {
+	width: 800px;
+	height: 73px;
+
+}
+.rank-list-items >.right .right_r {
+height: 73px;
+margin-left: 20px;
+}
+.rank-list-items >.right .right_r h3 {
+	margin-bottom: 25px;
+	vertical-align: top;
+}
+.rank-list-items >.right .right_r .write_name {
+	font-size: 12px;
+	color: #aaaaaa;
+	vertical-align: bottom;
+}
+.rank-list-items >.right .right_r  .classfiy{
+		font-size: 12px;
+	color: #aaaaaa;
+	vertical-align: bottom;
+}
+.rank-list-items >.left {
+	height: 73px;
+	line-height: 73px;
+	font-size: 14px;
+	color: #333333;
+}
+.buss-table {
+	margin: 0 auto;
+	width: 1000px;
+	border: 2px solid #dedede;
+	text-align: center;
+	
+}
+.buss-table td {
+	border: 1px solid #dedede;
+}
+.buss-table-colgrop col {
+	width: 250px;
+}
+.buss-table tr {
+	height: 40px;
+}
+.buss-table tr:first-child{
+	height: 60px;
+	font-size: 14px;
+	color: #aaaaaa;
+}
+.buss-table tr:last-child {
+	height: 80px;
+}
+.rightDiv .refund_notDealmessDetail {
+	width: 1020px;
+	height: 565px;
+	margin:  0 auto;
+	border: 1px solid #dedede;
+	border-radius: 4px;
 }

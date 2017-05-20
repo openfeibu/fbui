@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="Keywords" content=""/>
+    <meta name="Description" content=""/>
+    <link rel="stylesheet" type="text/css" href="css/fbUi.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/fbUi.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/echart/echarts.common.min.js"></script>
+</head>
+<body>
+	<!--头部-->
+	<div class="outArea head">
+       <div class="inArea">
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <div class="login">
+                <span style="background: transparent url('images/icon1.png') no-repeat 10px center;">本人本人</span>
+                <a href="#">退出</a>
+            </div>
+       </div>
+	</div>
+
+	<!--头部 end-->
+	
+	<!--内容-->
+	<div class='outArea addAuthor'>
+		<div class="inArea fb-clearfix">
+			<!--发布艺术品 left-->
+			<div class='fb-float-left leftDiv'>
+				<div><a href="#">营业额数据</a></div>
+				<div><a href="#">用户数据</a></div>
+				<div><a href="#">艺术品数据</a></div>
+				<div><a href="#">作者数据</a></div>
+			</div>
+			<!--发布艺术品 left end-->
+
+			<!--内容 right-->
+			<div class='fb-float-left rightDiv'>
+				<div class='artdata-kindBox'>
+					<div class='kindBox-items fb-inlineBlock'>
+						<p>艺术品</p>
+						<dd>
+							32000
+						</dd>
+					</div>
+					<div class='kindBox-items fb-inlineBlock'>
+						<p>被收藏数</p>
+						<dd>
+							100
+						</dd>
+					</div>
+					<div class='kindBox-items fb-inlineBlock'>
+						<p>已售数</p>
+						<dd>
+							32000
+						</dd>
+					</div>
+					<div class='kindBox-items fb-inlineBlock'>
+						<p>已租数</p>
+						<dd>
+							32000
+						</dd>
+					</div>
+				</div>
+				<div class='chart1'>
+					<div class='date fb-clearfix'>
+						<a>7天</a>
+						<a>14天</a>
+						<a>30天</a>
+						<a class='win-200-w'>自选日期</a>
+					</div>
+					<div id="main_chart1" class='main-chart'>
+						
+					</div>
+					<script>
+					var sma_titleChart1=$('#sma-titleChart1');
+ var main_chart1 = echarts.init(document.getElementById('main_chart1'));
+						// app.title = '坐标轴刻度与标签对齐';
+
+option = {
+    color: ['#3398DB'],
+    tooltip : {
+        trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis : [
+        {
+            type : 'category',
+            data : [sma_titleChart1, 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            axisTick: {
+                alignWithLabel: true
+            }
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'直接访问',
+            type:'bar',
+            barWidth: '60%',
+            data:[10, 52, 200, 334, 390, 330, 220]
+        }
+    ]
+};
+main_chart1.setOption(option);
+					</script>
+					<div class='sma-titleChart sma-titleChart1 fb-inlineBlock' id='sma-titleChart1'>
+						<p class='fb-inlineBlock'>中国书画</p>
+						<span class='fb-inlineBlock col1'></span>
+					</div>
+					<div class='sma-titleChart sma-titleChart2 fb-inlineBlock' id="sma-titleChart2">
+						<p class='fb-inlineBlock'>中国书画</p>
+						<span class='fb-inlineBlock col2'></span>
+					</div>
+					<div class='sma-titleChart sma-titleChart3 fb-inlineBlock' id="sma-titleChart3">
+						<p class='fb-inlineBlock'>中国书画</p>
+						<span class='fb-inlineBlock col3'></span>
+					</div>
+					<div class='sma-titleChart sma-titleChart4 fb-inlineBlock' id="sma-titleChart4">
+						<p class='fb-inlineBlock'>中国书画</p>
+						<span class='fb-inlineBlock col4'></span>
+					</div>
+					<div class='sma-titleChart sma-titleChart5 fb-inlineBlock' id="sma-titleChart5">
+						<p class='fb-inlineBlock'>中国书画</p>
+						<span class='fb-inlineBlock col5'></span>
+					</div>
+					<div class='sma-titleChart sma-titleChart6 fb-inlineBlock' id="sma-titleChart6">
+						<p class='fb-inlineBlock'>中国书画</p>
+						<span class='fb-inlineBlock col6'></span>
+					</div>
+					<div class='sma-titleChart sma-titleChart7 fb-inlineBlock' id="sma-titleChart7">
+						<p class='fb-inlineBlock'>中国书画</p>
+						<span class='fb-inlineBlock col7'></span>
+					</div>
+<!--图表 end-->
+					
+				</div>
+				<div class='rank-list'>
+						<p>收藏量艺术品最高排行榜</p>
+						<div class='rank-list-content'>
+							<div class='rank-list-items fb-clearfix'>
+								<div class='right fb-float-left'>
+									<img src="images/img6.jpg" alt="">
+									<div class='right_r fb-inlineBlock'>
+										<h3>艺术品名字</h3> 
+										<dd class='write_name'>作者名字</dd>
+										<dd class='classfiy '>中国书画 丨 写意山水</dd>
+									</div>
+								</div>
+								<div class='left fb-float-right'>
+									被收藏数4300
+								</div>
+							</div>
+							<div class='rank-list-items fb-clearfix'>
+								<div class='right fb-float-left'>
+									<img src="images/img6.jpg" alt="">
+									<div class='right_r fb-inlineBlock'>
+										<h3>艺术品名字</h3> 
+										<dd class='write_name'>作者名字</dd>
+										<dd class='classfiy '>中国书画 丨 写意山水</dd>
+									</div>
+								</div>
+								<div class='left fb-float-right'>
+									被收藏数4300
+								</div>
+							</div>
+							<div class='rank-list-items fb-clearfix'>
+								<div class='right fb-float-left'>
+									<img src="images/img6.jpg" alt="">
+									<div class='right_r fb-inlineBlock'>
+										<h3>艺术品名字</h3> 
+										<dd class='write_name'>作者名字</dd>
+										<dd class='classfiy '>中国书画 丨 写意山水</dd>
+									</div>
+								</div>
+								<div class='left fb-float-right'>
+									被收藏数4300
+								</div>
+							</div>
+							<div class='rank-list-items fb-clearfix'>
+								<div class='right fb-float-left'>
+									<img src="images/img6.jpg" alt="">
+									<div class='right_r fb-inlineBlock'>
+										<h3>艺术品名字</h3> 
+										<dd class='write_name'>作者名字</dd>
+										<dd class='classfiy '>中国书画 丨 写意山水</dd>
+									</div>
+								</div>
+								<div class='left fb-float-right'>
+									被收藏数4300
+								</div>
+							</div>
+							<div class='rank-list-items fb-clearfix'>
+								<div class='right fb-float-left'>
+									<img src="images/img6.jpg" alt="">
+									<div class='right_r fb-inlineBlock'>
+										<h3>艺术品名字</h3> 
+										<dd class='write_name'>作者名字</dd>
+										<dd class='classfiy '>中国书画 丨 写意山水</dd>
+									</div>
+								</div>
+								<div class='left fb-float-right'>
+									被收藏数4300
+								</div>
+							</div>
+							<div class='rank-list-items fb-clearfix'>
+								<div class='right fb-float-left'>
+									<img src="images/img6.jpg" alt="">
+									<div class='right_r fb-inlineBlock'>
+										<h3>艺术品名字</h3> 
+										<dd class='write_name'>作者名字</dd>
+										<dd class='classfiy '>中国书画 丨 写意山水</dd>
+									</div>
+								</div>
+								<div class='left fb-float-right'>
+									被收藏数4300
+								</div>
+							</div>
+							<div class='rank-list-items fb-clearfix'>
+								<div class='right fb-float-left'>
+									<img src="images/img6.jpg" alt="">
+									<div class='right_r fb-inlineBlock'>
+										<h3>艺术品名字</h3> 
+										<dd class='write_name'>作者名字</dd>
+										<dd class='classfiy '>中国书画 丨 写意山水</dd>
+									</div>
+								</div>
+								<div class='left fb-float-right'>
+									被收藏数4300
+								</div>
+							</div>
+							<div class='rank-list-items fb-clearfix'>
+								<div class='right fb-float-left'>
+									<img src="images/img6.jpg" alt="">
+									<div class='right_r fb-inlineBlock'>
+										<h3>艺术品名字</h3> 
+										<dd class='write_name'>作者名字</dd>
+										<dd class='classfiy '>中国书画 丨 写意山水</dd>
+									</div>
+								</div>
+								<div class='left fb-float-right'>
+									被收藏数4300
+								</div>
+							</div>
+							
+						</div>
+				</div>
+			</div>
+			<!--内容 right end-->
+		</div>
+	</div>
+	<!--内容 end-->
+
+</body>
