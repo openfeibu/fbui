@@ -1011,7 +1011,9 @@ vertical-align: top;
 	margin-top: 20px;
 }
 
+.flow_path {
 
+}
 
 
 
@@ -1086,25 +1088,25 @@ vertical-align: middle;
 
 }
 .col1 {
-	background:#f1c362;
+	
 }
 .col2 {
-	background:#c03636;
+	
 }
 .col3{
-	background:#1fa779;
+	
 }
 .col4 {
-	background:#d28268;
+	
 }
 .col5 {
-	background:#93c6ae;
+	
 }
 .col6 {
-	background:#63a0a7;
+	
 }
 .col7 {
-	background:#304553;
+	
 }
 
 .main-chart {
@@ -1184,8 +1186,61 @@ margin-left: 20px;
 }
 .rightDiv .refund_notDealmessDetail {
 	width: 1020px;
-	height: 565px;
 	margin:  0 auto;
 	border: 1px solid #dedede;
 	border-radius: 4px;
+}
+.flow_path:after {
+	top: 31px;
+	left: 12px;
+	content: '';
+	height: 270px;
+	border-left: 2px solid #aaaaaa;
+	position: absolute;
+	z-index: 0;
+}
+.flow_path .flowMess {
+	position: relative;
+	margin-bottom: 20px;
+	margin-left: 115px;
+}
+
+.flow_path .flowMess span,
+.flow_path .flowMess em {
+	margin: 12px 20px;
+}
+.flow_path  .flowMess:after{
+	position: absolute;
+	left: -110px;top: 10px;
+	height: 20px;
+	content: "";
+	width: 20px;
+	display: block;
+	background:#ffffff url('../images/icon9.png') no-repeat;
+	z-index: 999;
+}
+.flow_day {
+	width:50px;
+	position: absolute;
+	left: -90px;
+	color: #aaaaaa;
+}
+.icon_whit{
+	text-indent: 44px;
+	
+}
+.icon10 {
+
+	background: url('../images/icon10.png') no-repeat 0px center ;
+}
+.padd-top-10 {
+	padding: 30px 0!important;
+}
+.ban-btn {
+	background: #eeeeee;
+	color: #aaaaaa;
+}
+.ban-btn:hover {
+	background: #eeeeee!important;
+	color: #aaaaaa!important;
 }
