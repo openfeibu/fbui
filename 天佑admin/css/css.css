@@ -29,6 +29,12 @@ a:hover{color: #c6ae7c !important;}
 .inArea {
 	margin: 0 auto;
 }
+.mar-auto {
+	margin: 0 auto;
+}
+.mar-10 {
+	margin: 10px;
+}
 .outArea.head >.inArea {
 	height: 60px;
 	line-height: 60px;
@@ -540,15 +546,15 @@ opacity: .2;
 /*选取编辑内容*/
 .publishAct_choseEditCon .pushTime {
 	padding-left: 20px;
-	margin-left: 20px;
 	width: 178px;
 	height:38px;
 	line-height:38px;
 	border: 1px solid #f0f0f0;
 	background: url("../images/icon2.png") no-repeat 158px center;
 }
+
 .publishAct_choseEditCon .sear {
-	margin-right: 100px;
+	
 	padding-left: 20px;
 	width: 390px;
 	height:38px;
@@ -848,6 +854,7 @@ vertical-align: top;
 	height: 85px;
 }
 .mess-table2 tbody tr td {
+
 	background: url("../images/td_line.png") no-repeat 0 center;
 }
 .mess-table2 tbody tr td:first-child {
@@ -971,17 +978,15 @@ vertical-align: top;
 	line-height: 80px;
 }
 .refund_notDealmessDetail .proDiv {
-	
 	width: 985px;
 	padding: 20px 0;
 	margin:  0 auto;
 }
-.refund_notDealmessDetail .proDiv_clas {
- float: left;
 
-}
-.refund_notDealmessDetail .proDiv_clas >img {
-	float: left;
+.refund_notDealmessDetail .proDiv >div >img {
+	margin: 1px;
+	height: 128px;
+	width: auto;
 }
 .refund_notDealmessDetail .pro_detail {
 
@@ -1045,6 +1050,13 @@ vertical-align: top;
 	text-align: center;
 	font-size: 24px;
 	color: #333333;
+}
+.right {
+		width: 940px;
+	padding:20px 30px;
+	height: 630px;
+	margin: 0 auto;
+	background: #f9f9f9;
 }
 .chart1 {
 	width: 940px;
@@ -1197,7 +1209,7 @@ margin-left: 20px;
 	height: 270px;
 	border-left: 2px solid #aaaaaa;
 	position: absolute;
-	z-index: 0;
+	z-index: 444;
 }
 .flow_path .flowMess {
 	position: relative;
@@ -1236,6 +1248,9 @@ margin-left: 20px;
 .padd-top-10 {
 	padding: 30px 0!important;
 }
+.padd-bottom-20 {
+	padding: 20px 0!important;
+}
 .ban-btn {
 	background: #eeeeee;
 	color: #aaaaaa;
@@ -1244,3 +1259,89 @@ margin-left: 20px;
 	background: #eeeeee!important;
 	color: #aaaaaa!important;
 }
+.win-95per {
+	width: 95%;
+}
+.proDiv >form .proformDiv{
+	width: 450px;
+	height: 44px;
+		margin: 10px;
+
+}
+.proDiv >form .proformDiv label {
+	width: 140px;
+	text-align: left;
+	display: inline-block;
+    *display: inline;
+    *zoom:1;
+    vertical-align: middle;
+}
+.proDiv >form .proformDiv input  {
+			width: 298px;
+	height: 40px;
+	border:1px solid #dedede;
+
+}
+.proDiv >form .proformDiv select {
+		width: 300px;
+	height: 40px;
+	vertical-align: middle;
+	border-color: #dedede;
+}
+.opa-4 {
+	opacity: .4;
+	cursor: text;
+}
+.consumer_rank_tabel .user >col{
+	width: 330px;
+}
+.marLeft-40 {
+	margin-left:40px;
+}
+.consumer_rank_tabel tr {
+	height: 80px;
+}
+.consumer_rank_tabel tr:first-child {
+	height: 60px;
+}
+.rankItems_left {
+	width: 63px;
+	height: 63px;
+
+	border-radius: 50%;
+}
+.consumer_rank_tabel {
+	margin: 0 auto;
+	width: 1000px;
+	
+	text-align: center;
+	
+}
+.consumer_rank_tabel td {
+	border: 1px solid #dedede;
+}
+.consumer_rank_tabel col {
+	width: 250px;
+}
+.buss-table tr {
+	height: 40px;
+
+}
+.consumer_rank_tabel tr:first-child{
+	height: 60px;
+	font-size: 14px;
+	color: #aaaaaa;
+}
+ .rankItems_right {
+ 	margin-left: 20px;
+	text-align: left;
+	height: 65px;
+}
+.rankItems_right h2,
+.rankItems_right h3 {
+	color: #333;
+}
+.rankItems_right h2 {
+	height: 40px;
+}
+

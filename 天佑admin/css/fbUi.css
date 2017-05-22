@@ -50,6 +50,12 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
     *zoom:1;
     vertical-align: middle;
 }
+.fb-margin-auto {
+    margin: 0 auto;
+}
+.fb-txtAlign-center {
+    text-align: center;
+}
 .fb-table{
    display: table;
 }
@@ -210,6 +216,18 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 .fb-color-success{color: #13CE66;}
 .fb-color-warning{color: #F7BA2A;}
 .fb-color-danger{color: #FF4949;}
+
+/*字体加粗*/
+.fb-fontWei-bolder {
+    font-weight: bolder;
+}
+/*常见外边距*/ 
+.fb-margin-10 {
+    margin: 10px;
+}
+.fb-margin-20 {
+    margin: 20px;
+}
 
 /*按钮*/
 button{width: 88px;height: 36px;border:1px solid #bfcbd9;border-radius: 5px;background: none;color:#1f2d3d; }
