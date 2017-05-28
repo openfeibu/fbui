@@ -225,6 +225,9 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 .fb-margin-10 {
     margin: 10px;
 }
+.fb-margin-lr20 {
+    margin: 0 20px;
+}
 .fb-margin-20 {
     margin: 20px;
 }

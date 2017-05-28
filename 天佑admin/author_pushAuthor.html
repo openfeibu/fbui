@@ -36,28 +36,26 @@
       <!--发布艺术品 left end-->
 
       <!--内容 right-->
-      <div class='fb-float-left rightDiv fb-position-relative author_right'>
+      <div class='rightDiv fb-position-relative author_right'>
         <form action="">
           <div class='input_all'>
             <label for="">作者名字</label>
             <input type="text" placeholder=''>
           </div>
             <div class='input_all'>
-                <label for="">出生年月日</label>
-                <select class='selet-100 borRai-l' name="" id="" style="background:url('images/icon2.png') no-repeat 80px center">
-                    <option value="">年</option>
-                </select>
-                <select class='selet-100 month' name="" id="" style="background:url('images/icon2.png') no-repeat 80px center">
-                    <option value="">月</option>
-                </select>
-                <select class='borRai-r selet-100' name="" id="" style="background:url('images/icon2.png') no-repeat 80px center">
-                    <option value="">日</option>
-                </select>
+            <label for="">出生年月日</label>
+                <input type="text"  class='selet-100 borRai-l' style="background:url('images/icon2.png') no-repeat 80px center" placeholder='年'>
+            
+                <input type="text" class='selet-100 month' style="background:url('images/icon2.png') no-repeat 80px center"  placeholder='月'>
+           
+                <input type="text"  class='borRai-r selet-100' style="background:url('images/icon2.png') no-repeat 80px center"  placeholder='日'>
             </div>
           <!--国画题材-->
           <div class='fb-clearfix input_all'>
               <label  class='fb-float-left' for="">简介 </label>
-              <div class='win-510 fb-float-left'><textarea style="width: 100%;height: 100%;border: none"></textarea>
+              <div class='intro-fra win-510 fb-float-left hei-170'>
+              <textarea name="" id=""> </textarea>
+
               </div>
           </div>
           
@@ -71,9 +69,9 @@
               </div>
           </div>
           <div class="input_all ">
-              <a href="#" class='fb-inlineBlock btn_click'>确认更改</a>
-            <a href="#" class='fb-inlineBlock btn_click'>重置</a>
-            <a href="#" class='fb-inlineBlock btn_click dele_art'>删除该作者</a>
+              <a href="#" class='fb-inlineBlock btn_click btn_warning'>发布</a>
+            <a href="#" class='fb-inlineBlock btn_click btn-common'>返回上一页</a>
+            <a href="#" class='fb-inlineBlock btn_click btn-common'>重置</a>
           </div>
         </form>
           <a href="" class='fb-inlineBlock fb-position-absolute author_right perPhoto'>

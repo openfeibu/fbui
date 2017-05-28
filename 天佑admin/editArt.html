@@ -31,12 +31,12 @@
       <!--发布艺术品 left-->
       <div class='fb-float-left leftDiv'>
         <div><a href="#">发布艺术品</a></div>
-        <div><a href="#">编辑艺术品</a></div>
+        <div><a href="#" class="aTitle-hover">编辑艺术品</a></div>
       </div>
       <!--发布艺术品 left end-->
 
       <!--内容 right-->
-      <div class='fb-float-left rightDiv fb-position-relative'>
+      <div class=' rightDiv fb-position-relative'>
         <form action="">
           <div class='input_all'>
             <label for="">发布艺术品</label>
@@ -44,25 +44,22 @@
           </div>
           <div class='input_all'>
             <label for="">作者</label>
-            <select name="" id="" style="background:url('images/icon2.png') no-repeat 280px center">
-              <option value="">C姓作者</option>
-            </select>
+           
+              <input type="text" style="background:url('images/icon2.png') no-repeat 280px center" placeholder='C姓作者'>
+          
             
           </div>
           <div class=' input_all'>
             <label for="">出产年份</label>
-            <select name="" id="" style="background:url('images/icon2.png') no-repeat 280px center">
-              <option value="">2017年</option>
-            </select>
+            
+              <input type="text" style="background:url('images/icon2.png') no-repeat 280px center" placeholder='2017年'>
           </div>
           <div class='fb-position-relative input_all'>
               <label for="">类型</label>
-              <select name="" id="type" style="background:url('images/icon2.png') no-repeat 280px center">
-                <option value="">奇石玉石</option>
-              </select>
+              <input type="text" style="background:url('images/icon2.png') no-repeat 280px center" placeholder='奇石玉石'>
           </div>
           <div class='input_all size'>
-            <label for="">尺寸</label>
+            <label for="">尺寸( cm )</label>
             <input type="text" placeholder='100'>
             <input type="text" style='border:none;width:50px;padding-left:0;text-align:center' placeholder='x'>
             <input type="text" placeholder='200'>
@@ -71,18 +68,17 @@
       
           <div class='fb-position-relative input_all'>
             <label for="">题材</label>
-            <select name="" id="matter" style="background:url('images/icon2.png') no-repeat 280px center">
-              <option value="">宝石-玛瑙</option>
-            </select>
+
+              <input type="text" style="background:url('images/icon2.png') no-repeat 280px center" placeholder='宝石-玛瑙'>
+            
             
 
           </div>
               <!--国画题材 end-->
           <div class='input_all'>
             <label for="">性质</label>
-            <select name="" id="" style="background:url('images/icon2.png') no-repeat 280px center">
-              <option value="只租">只售</option>
-            </select>
+          
+             <input type="text" style="background:url('images/icon2.png') no-repeat 280px center" placeholder='只售'>
           </div>
           <div class='fb-clearfix input_all'>
             <label class='fb-float-left' for="">价格（￥）</label>
@@ -104,44 +100,50 @@
           </div>
           <div class='input_all size'>
             <label for="">物流</label>
-            <select name="" id="" style="width:180px;background:url('images/icon2.png') no-repeat 160px center">
-              <option value="只租">地区</option>
-            </select>
-            <input type="text" class='logistic' placeholder='物流费用' style='padding-left:25px;'>
+          
+            <input type="text"  style="width:180px;background:url('images/icon2.png') no-repeat 160px center" placeholder='广东佛山'>
+            <input type="text" class='logistic' placeholder='10' style='padding-left:25px;'>
           </div>
           <p class='add_adress'><a href="#">添加新地区物流费用+</a></p>
           <div class='fb-clearfix input_all'>
               <label  class='fb-float-left' for="">艺术简介 </label>
-              <div class='win-630 fb-float-left'>
-                艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺
+              <div class='intro-fra win-630 fb-float-left'>
+              <textarea name="" id=""> 艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺
 艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺
-艺术品简介艺术品简介艺术品简介艺术品简介
+艺术品简介艺术品简介艺术品简介艺术品简介</textarea>
+               
               </div>
           </div>
           
-          <div class='fb-clearfix input_all'>
-              <label  class='fb-float-left' for="">添加封面 </label>
-              <div class='fb-inlineBlock fb-position-relative'><a href="" class='win-160 fb-inlineBlock'><img src="images/img3.jpg" alt="">
+          <div class='fb-clearfix input_all '>
+              <label  class='fb-float-left ' for="" style="margin-top:20px">编辑详情图 </label>
+              <div class='fb-inlineBlock fb-position-relative '><a href="" class='win-160 fb-inlineBlock'><img src="images/img3.jpg" alt="">
                 <span class='fb-inlineBlock delet'></span>
               </a>
               </div>
-              <div class='win-160 fb-inlineBlock' style="text-align:center;background:none;margin:0 10px;font-size:14px;color:#333">添加详情图</div>
-              <div class='fb-inlineBlock fb-position-relative'><a href="" class='win-160 fb-inlineBlock'><img src="images/img2.jpg" alt="">
+              
+              <div class='fb-inlineBlock fb-position-relative fb-margin-20'><a href="" class='win-160 fb-inlineBlock'><img src="images/img2.jpg" alt="">
                 <span class='fb-inlineBlock delet'></span>
               </a>
               </div>
           </div>
-          <div class="input_all ">
-              <a href="#" class='fb-inlineBlock btn_click'>确认更改</a>
-            <a href="#" class='fb-inlineBlock btn_click'>重置</a>
-            <a href="#" class='fb-inlineBlock btn_click dele_art'>删除艺术品</a>
+          <div class="input_all mar-top-0">
+              <a href="#" class='fb-inlineBlock btn_click btn_warning'>确认更改</a>
+            <a href="#" class='fb-inlineBlock btn_click btn-common'>重置</a>
+            <a href="#" class='fb-inlineBlock btn_click btn_danger'>删除该艺术品</a>
           </div>
         </form>
         <div class='fb-position-absolute obj_art'>
           <div  class='cover_a' ><a href="#"><img src="images/img4.jpg" alt=""></a></div>
           <div class='shade' id="shade">
           <div class='cover fb-position-absolute'></div>
-             <p class='cover-txt fb-position-absolute'>编辑封面</p>
+             <p class='cover-txt fb-position-absolute'>
+                  编辑
+              <br>
+                  封面
+                 
+             </p>
+             
           </div>
         </div>
       </div>

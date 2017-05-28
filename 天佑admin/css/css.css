@@ -21,10 +21,15 @@ a:hover{color: #c6ae7c !important;}
 .font_362 {
 	color:f1c362;
 }
+.ourArea {
+		min-width: 1320px;
+		min-height: 100%;
+}
 .outArea.head {
 		height: 60px;
 	line-height: 60px;
 	background: #fff;
+	border: 1px solid #dedede;
 }
 .inArea {
 	margin: 0 auto;
@@ -34,6 +39,9 @@ a:hover{color: #c6ae7c !important;}
 }
 .mar-10 {
 	margin: 10px;
+}
+.mar-top-50 {
+	margin-top:50px;
 }
 .outArea.head >.inArea {
 	height: 60px;
@@ -92,26 +100,35 @@ content: ""; display: inline-block;*display:inline;*zoom:1;width: 100%;height:0;
 /*dropAuthor*/
 
 .leftDiv {
-	width: 20%;
+	width:240px;
 	background: #eeeeee;
 }
-.leftDiv >div {
+.leftDiv >div:first-child{
 	margin-top: 35px;
+}
+.leftDiv >div {
+	margin-top: 25px;
 	text-align: center;
 }
 .leftDiv >div a {
 	font-size: 16px;
 	color: #666666;
 }
-.leftDiv >div a:hover {
+.leftDiv >div a:hover{
+	font-size: 16px;
 	color: #333333!important;
-	font-weight: 600!important;
+	font-weight: bold;
+}
+.leftDiv >div .aTitle-hover {
+	font-size: 16px;
+	font-weight: bold;
+	color: #333333!important;
 }
 .rightDiv {
-	width: 80%;
+	margin-left: 240px;
 	padding-top: 20px;
 	background: #fff;
-
+	min-height: 2000px;
 }
 .rightDiv>form .input_all {
 	margin-left: 100px;
@@ -171,16 +188,23 @@ content: ""; display: inline-block;*display:inline;*zoom:1;width: 100%;height:0;
 	padding-left:30px;margin-left:15px;width:90px;background:url('../images/icon4.png') no-repeat 10px center
 }
 .win-630 {
-	width: 600px;
-	height: 170px;
-	padding: 15px;
-	background: #f9f9f9;
+	width: 630px;
+	height: 200px;
+}
+.intro-fra >textarea {
+		padding: 15px;
+		width: 90%;
+		height: 90%;
+		resize:none;
+		border: none;
+		background: #f9f9f9;
 }
 .win-510 {
 	width: 510px;
-	height: 170px;
-	padding: 15px;
 	background: #f9f9f9;
+}
+.hei-170 {
+	height: 170px;
 }
 .win-160 {
 	width: 160px;
@@ -216,11 +240,28 @@ content: ""; display: inline-block;*display:inline;*zoom:1;width: 100%;height:0;
 	margin: 0 15px;
 	line-height: 40px;
 	text-align: center;
-	background: #f9f9f9;
+	background: #eeeeee;
 	font-size: 14px;
+	border-radius: 5px;
 }
-.btn_click:hover{
+.btn_warning{
 	background: #f1c362!important;
+	color: #ffffff!important;
+}
+.btn_warning:hover {
+	opacity: .8;
+	color: #ffffff!important;
+}
+.btn-common:hover {
+	opacity: .5;
+	color: #000!important;
+}
+.btn_danger {
+	background: #dc5329!important;
+	color: #ffffff!important;
+}
+.btn_danger:hover {
+	opacity: .8;
 	color: #ffffff!important;
 }
 .author {
@@ -244,7 +285,8 @@ content: ""; display: inline-block;*display:inline;*zoom:1;width: 100%;height:0;
 	width: 660px;
 	height: 160px;
 	padding: 20px 0px;
-		opacity: 0;
+		display: none;
+
 transition :all .3s;
 
 }
@@ -299,7 +341,7 @@ transition :all .3s;
 	width: 660px;
 	height: 160px;
 	padding: 20px 0px;
-	opacity: 0;
+	display: none;
 transition :all .3s;
 
 	z-index: 999;
@@ -337,22 +379,22 @@ transition :all .3s;
 	height: 290px;
 	width: 190px;
 	overflow: hidden;
-  left: 830px;top: 0;
+  left: 830px;top: 20px;
 }
 .rightDiv .obj_art img {
 	width: 100%;
 	height: 100%;
 }
-.dele_art:hover {
-	background: #dc5329!important;
-}
+
 .shade {
-	opacity: 0;
 transition :all .3s;
 }
 .show {
 	opacity: 1;
 	transition :all .3s;
+}
+.show_div {
+	display: block;
 }
 .cover {
 	width: 100%;
@@ -367,15 +409,15 @@ transition :all .3s;
 	/*display: none;*/
 }
 .cover-txt {
-	top: 0;
+	top: 120px;
 	left: 0;
 	width: 100%;
 	opacity: 1;
 	text-align: center;
 	color: #fff;
-	line-height: 290px;
+	
 }
-
+.cover-txt
 /*发布活动  陈设案例*/
 /*统一样式*/
 .return-page {
@@ -1051,7 +1093,7 @@ vertical-align: top;
 	font-size: 24px;
 	color: #333333;
 }
-.right {
+.right2 {
 		width: 940px;
 	padding:20px 30px;
 	height: 630px;

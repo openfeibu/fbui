@@ -284,26 +284,36 @@ $(function(){
 	});
 })
 
+
 //弹出框
 	$(function(){
-		$('#type').click(function(){
-	
-		$('.artwork').addClass('show');
-   });
-		$('.artwork').mouseleave(function(){
-		$('.artwork').removeClass('show');
-	});
+		$('#matter').focus(function(){
+			$('.painting').addClass('show_div');
+			$('#matter').blur();
+});
+		var paiting_li = $('.painting >div li');
+		paiting_li.on('click',function  () {
+			var val = $(this).text();
+			console.log(val);
+			$('#matter').val(val);
+			$('.painting').removeClass('show_div');
+		
+		})
+
+		$('#type').focus(function(){
+			$('.artwork').addClass('show_div');
+			$('#type').blur();
+});
+		var paiting_li = $('.artwork >div li');
+		paiting_li.on('click',function  () {
+			var val = $(this).text();
+			console.log(val);
+			$('#type').val(val);
+			$('.artwork').removeClass('show_div');
+		
+		})
 	})
 
-		$(function(){
-		$('#matter').click(function(){
-	
-		$('.painting').addClass('show');
-   });
-		$('.painting').mouseleave(function(){
-		$('.painting').removeClass('show');
-	});
-	})
 
 
 
@@ -320,3 +330,5 @@ $(function(){
 
  
             })
+ /**/
+
