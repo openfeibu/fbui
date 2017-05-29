@@ -19,17 +19,29 @@ a:hover{color: #c6ae7c !important;}
 
 /*首页*/
 .font_362 {
-	color:f1c362;
+	color:#f1c362;
 }
-.ourArea {
+.outArea {
 		min-width: 1320px;
-		min-height: 100%;
+		/*min-height:;*/
+}
+.martop-62 {
+	margin-top: 62px;
 }
 .outArea.head {
 		height: 60px;
 	line-height: 60px;
 	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
 	border: 1px solid #dedede;
+}
+.scroll{
+overflow: hidden;
+overflow-x:none;
 }
 .inArea {
 	margin: 0 auto;
@@ -39,6 +51,9 @@ a:hover{color: #c6ae7c !important;}
 }
 .mar-10 {
 	margin: 10px;
+}
+.marL-30 {
+	margin-left:30px;
 }
 .mar-top-50 {
 	margin-top:50px;
@@ -101,7 +116,10 @@ content: ""; display: inline-block;*display:inline;*zoom:1;width: 100%;height:0;
 
 .leftDiv {
 	width:240px;
+	height: 100%;
 	background: #eeeeee;
+	position: fixed;
+	z-index: 999;
 }
 .leftDiv >div:first-child{
 	margin-top: 35px;
@@ -126,13 +144,13 @@ content: ""; display: inline-block;*display:inline;*zoom:1;width: 100%;height:0;
 }
 .rightDiv {
 	margin-left: 240px;
-	padding-top: 20px;
+	padding-top: 10px;
 	background: #fff;
-	min-height: 2000px;
+	min-height: 100%;
 }
 .rightDiv>form .input_all {
 	margin-left: 100px;
-	margin-bottom: 23px;
+	padding: 10px 0;
 }
 .rightDiv>form .input_all label {
 	    display: inline-block;
@@ -141,6 +159,7 @@ content: ""; display: inline-block;*display:inline;*zoom:1;width: 100%;height:0;
 	font-size: 14px;
 	width: 135px;
 	padding-left: 10px;
+	padding-top: 15px;
 	color: #333333;
 
 }
@@ -182,19 +201,25 @@ content: ""; display: inline-block;*display:inline;*zoom:1;width: 100%;height:0;
 	font-size: 14px;
 	text-decoration: underline;
 	margin-bottom: 30px;
-	margin-top: -15px;
+	margin-top: 5px;
 }
 .logistic {
 	padding-left:30px;margin-left:15px;width:90px;background:url('../images/icon4.png') no-repeat 10px center
 }
 .win-630 {
 	width: 630px;
+
+}
+.hei-200 {
 	height: 200px;
+}
+.hei-80 {
+	height: 80px;
 }
 .intro-fra >textarea {
 		padding: 15px;
-		width: 90%;
-		height: 90%;
+		width: 94%;
+		height: 82%;
 		resize:none;
 		border: none;
 		background: #f9f9f9;
@@ -379,7 +404,7 @@ transition :all .3s;
 	height: 290px;
 	width: 190px;
 	overflow: hidden;
-  left: 830px;top: 20px;
+  left: 830px;top: 22px;
 }
 .rightDiv .obj_art img {
 	width: 100%;
@@ -387,7 +412,53 @@ transition :all .3s;
 }
 
 .shade {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 transition :all .3s;
+}
+.part1_shadeDiv {
+	height: 100%;width: 98%;text-align: center;opacity: 0;
+}
+.part1_shade {
+	top: 0;
+	left: 0;
+	height: 98%;
+	background: #000;
+	opacity: .4;
+	width: 100%;
+	transition :all .3s;
+}
+.part1_shade_p {
+	text-align: center;
+	left: 80px;
+	top: 130px;
+	color: #ffffff;
+	
+
+}
+.part2_coverDiv {
+	height: 100%;width: 98%;text-align: center;opacity: 0;
+}
+.part2_cover{
+	top: 0;
+	left: 0;
+	height: 98%;
+	background: #000;
+	opacity: .4;
+	width: 100%;
+	transition :all .3s;
+}
+.part2_cover_p {
+	text-align: center;
+	left: 74px;
+	top: 43px;
+	color: #ffffff;
+}
+.top60-le50{
+	top: 50px!important;
+	left: 60px!important;
 }
 .show {
 	opacity: 1;
@@ -398,26 +469,25 @@ transition :all .3s;
 }
 .cover {
 	width: 100%;
-	height: 285px;
+	height: 100%!important;
 	top: 0;
 	left: 0;
 	background: #000;
-	opacity: .5;
+	opacity: .3!important;
 	line-height: 290px;
 	text-align: center;
 	color: #fff;
-	/*display: none;*/
+
 }
 .cover-txt {
-	top: 120px;
 	left: 0;
+	top: 150px;
 	width: 100%;
 	opacity: 1;
 	text-align: center;
 	color: #fff;
 	
 }
-.cover-txt
 /*发布活动  陈设案例*/
 /*统一样式*/
 .return-page {
@@ -454,7 +524,7 @@ border-radius: 3px;
 	margin-top: 35px;
 }
 .publishAct_right .input_all .selet-100 {
-	width: 101px;
+	width: 89px;
 	height:40px;
 	margin:0 -2px;
 	border-radius: 0;
@@ -472,13 +542,15 @@ border-radius: 3px;
 .write {
 		width: 720px;
 	height: 580px;
-overflow-y:scroll;
+overflow: hidden;
 }
 .write textarea {
 	padding: 10px;
-		width: 100%;
+		width: 98%;
 	height:100%;
 	border: none;
+	resize:none;
+	scroll:hidden;
 }
 .writeTitle {
 	border-bottom: 1px solid #dedede;
@@ -532,9 +604,6 @@ margin-right: 40px;
 	background: #000;
 	opacity: 0;
 }
-.upload_cover:hover {
-opacity: .2;
-}
 
 /*发布活动资讯*/ 
 .win-500{
@@ -560,24 +629,12 @@ opacity: .2;
 	height: 100%;
 	width: 100%;
 }
-.edit-upload >div .cover{
-	width: 100%;
-	height: 110px;
-	top: 0;
-	left: 0;
-	background: #000;
-   opacity: 0;
-	transition :all .3s;
-	line-height: 110px;
-	text-align: center;
-}
 .edit-upload >div .cover-txt {
 	line-height: 110px;
 }
-.edit-upload .cover:hover {
+.cover-show {
 	opacity: .4;
 	transition :all .3s;
-	line-height: 110px;
 }
 .hei-180 {
 	height: 180px;
@@ -592,7 +649,7 @@ opacity: .2;
 	height:38px;
 	line-height:38px;
 	border: 1px solid #f0f0f0;
-	background: url("../images/icon2.png") no-repeat 158px center;
+	background: url("../images/icon2.png") no-repeat 168px center;
 }
 
 .publishAct_choseEditCon .sear {
@@ -607,13 +664,14 @@ opacity: .2;
 .publishAct_choseEditCon .itemDiv {
 	margin: 0 auto;
 	margin-bottom: 60px;
+	padding-left: 23px;
     margin-top: 20px;
 	cursor: pointer;
 }
 .publishAct_choseEditCon .itemDiv .item {
-	margin-left:23px;
+	margin-right:22px;
 	margin-bottom: 20px;
-    width: 280px;
+    width: 240px;
     height:360px;
     border:1px solid #dedede;
     overflow: hidden;
@@ -633,6 +691,7 @@ opacity: .2;
 .publishAct_choseEditCon .itemDiv .item_title span {
 	font-size: 12px;
 	color: #aaaaaa;
+	padding-right: 10px;
 }
 .publishAct_choseEditCon .itemDiv .item_img {
     height: 160px;
@@ -674,7 +733,7 @@ opacity: .2;
 /*==========================================================================================================*/
 /*作者界面*/
 .author_right .input_all .selet-100 {
-	width: 101px;
+	width: 89px;
 	height:40px;
 	margin:0 -2px;
 	border-radius: 0;
@@ -686,6 +745,7 @@ opacity: .2;
 	right:60px;
 	z-index: 999;
 	background: #eeeeee;
+	opacity: .6;
 }
 .perPhoto >div {
 	height: 100%;
@@ -708,13 +768,13 @@ opacity: .2;
 	text-align: center;
 }
 .perPhoto .cover-txt {
-	top: 0;
-	left: 0;
+	top: 72px;
 	width: 100%;
 	opacity: 1;font-size: 14px;
 	text-align: center;
 	color: #333333;
-	line-height: 163px;
+
+	
 }
 .perPhot_cover {
 	height: 100%;

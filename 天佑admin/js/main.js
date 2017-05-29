@@ -318,17 +318,14 @@ $(function(){
 
 
 //图片移出入
-           $(function(){
-              $('.obj_art').mouseenter(function(){
-              
-                $('.shade').addClass('show');
-              });
-              $('.obj_art').mouseleave(function(){
-            
-                  $('.shade').removeClass('show');
-              })
+	$(function(){
+		$('.obj_art').mouseenter(function(){
+	$('.shade').addClass('show');
+	});
+	$('.obj_art').mouseleave(function(){
 
- 
-            })
+	  $('.shade').removeClass('show');
+	})
+	})
+
  /**/
-

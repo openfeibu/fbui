@@ -26,14 +26,14 @@
   <!--头部 end-->
   
   <!--内容-->
-  <div class='outArea addAuthor'>
+  <div class='outArea addAuthor martop-62'>
     <div class="inArea">
       <!--标题 left-->
       <div class='fb-float-left leftDiv publishAct_lefthead'>
         <div><a href="#">发布活动资讯</a></div>
         <div><a href="#">编辑活动资讯</a></div>
         <div><a href="#">发布陈设案例</a></div>
-        <div><a href="#">编辑陈设案例</a></div>
+        <div><a href="#"  class="aTitle-hover">编辑陈设案例</a></div>
         <div><a href="#">发布展览服务</a></div>
         <div><a href="#">编辑展览服务</a></div>
     
@@ -41,7 +41,7 @@
       <!--标题 left end-->
 
       <!--内容 right-->
-            <div class='fb-float-left rightDiv fb-position-relative publishAct_right'>
+            <div class='rightDiv fb-position-relative publishAct_right martop-62'>
 
         <form action="">
           <div class='input_all'>
@@ -50,22 +50,18 @@
           </div>
           <div class='input_all'>
             <label for="">案例类型</label>
-            <select name=""  style="background:url('images/icon2.png') no-repeat 280px center">
-              <option value="展览">展览</option>
-            </select>
+            
+            <input type="text"  style="background:url('images/icon2.png') no-repeat 280px center" placeholder='展览'>
             
           </div>
           <div class='input_all'>
             <label for="">案例陈设时间</label>
-            <select class='selet-100 borRai-l' name="" id="" style="background:url('images/icon2.png') no-repeat 80px center">
-              <option value="">年</option>
-            </select>
-            <select class='selet-100 month' name="" id="" style="background:url('images/icon2.png') no-repeat 80px center">
-              <option value="">月</option>
-            </select>
-            <select class='borRai-r selet-100' name="" id="" style="background:url('images/icon2.png') no-repeat 80px center">
-              <option value="">日</option>
-            </select>
+            
+            <input type="text"  class='selet-100 borRai-l'  style="background:url('images/icon2.png') no-repeat 80px center" placeholder='年'>
+          
+            <input type="text"  class='selet-100 month' style="background:url('images/icon2.png') no-repeat 80px center" placeholder='月'>
+          
+            <input type="text"  class='borRai-r selet-100' style="background:url('images/icon2.png') no-repeat 80px center" placeholder='日'>
           </div>
 
           
@@ -82,18 +78,21 @@
                 </div>
                 <div class='write'>
                 <textarea name="" id=""> 艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺
-艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺艺术品简介艺术品简介艺术品简介艺术品简介</textarea>
+艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺术品简介艺艺术品简介艺术品简介艺术品简介艺术品简介
+
+</textarea>
+
 </div>
               </div>
           </div>
            <!--编写正文 end-->
 
 
-         
+         <div style="height:60px"></div>
           <div class="input_all ">
-            <a href="#" class='fb-inlineBlock btn_click'>确定更改</a>
-            <a href="#" class='fb-inlineBlock btn_click'>重置</a>
-            <a href="#" class='fb-inlineBlock btn_click dele_art'>删除该艺术品</a>
+            <a href="#" class='fb-inlineBlock btn_click btn_warning'>确定更改</a>
+            <a href="#" class='fb-inlineBlock btn_click btn-common'>重置</a>
+            <a href="#" class='fb-inlineBlock btn_click btn_danger'>删除该艺术品</a>
           </div>
         </form>
         <a href="" class='fb-inlineBlock fb-position-absolute publishAct_right edit-upload'>
@@ -103,11 +102,17 @@
               <div class="img_div">
              <img src="images/img5.jpg" alt="">
              </div>
-             <div class='fb-position-absolute cover' id="cover">
-               <p class='cover-txt fb-position-absolute'>更改封面</p>
+             <div class="part2_coverDiv show">
+              <div class='part2_cover fb-position-absolute' id="part2_cover"></div>
+              <p class='part2_cover_p fb-position-absolute'>
+                    编辑<br> 封面
+                   
+               </p>
              </div>
           </div>
         </a>
+
+        <div class="hei-80"></div>
       </div>
       <!--内容 right end-->
     </div>
