@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -30,7 +30,7 @@
     <div class="inArea">
       <!--标题 left-->
      <div class='fb-float-left leftDiv publishAct_lefthead'>
-        <div><a href="#">未处理退款</a></div>
+        <div><a href="#"  class="aTitle-hover">未处理退款</a></div>
         <div><a href="#">正在处理退款</a></div>
         <div><a href="#">已处理退款</a></div>
 
@@ -39,9 +39,9 @@
       <!--标题 left end-->
 
       <!--内容 right-->
-            <div class='fb-float-left rightDiv fb-position-relative publishAct_right'>
+            <div class='rightDiv fb-position-relative publishAct_right'>
             <div class='return-page'> 
-             <a href="#"> 返回上一页</a> 
+             <a href="#"  style='margin-left:67px'> 返回上一页</a> 
             </div>
 
     
@@ -92,11 +92,23 @@
 <p  class='pro_detail_p4'> <span>原因：</span>XXXXXXXXXXXXXX</p>
 <p  class='pro_detail_p5'> <span>说明：</span>XXXXXXXXXXXXXXXXXXXXXXXXXX</p>
                   </div>
-                  <div class="input_all refund_Detail_click fb-float-right">
-            <a href="#" class='fb-inlineBlock btn_click redlight-btn col-white'>不予退款</a>
-            <a href="#" class='fb-inlineBlock btn_click warn-btn col-white'>已同意退款，等待物流</a>
-           
-          </div>
+                  <div class="proDiv pro_detail bor-bot fb-clearfix">
+                    <div class="input_all refund_Detail_click fb-float-right">
+                      <a href="#" class='fb-inlineBlock btn_click btn_danger popRenson'>不予退款</a>
+                      <a href="#" class='fb-inlineBlock btn_click btn_warning'>已同意退款，等待</a>
+                    </div>
+                    <script>  
+                        $(function(){
+                          var text = '<textarea class="pop-txt"></textarea>';
+                            $('.popRenson').click(function () {
+                                $fb.showModal({
+                                    title:'请填写不予退款的原因',
+                                    content:text
+                                });
+                            })
+                        })
+                    </script>
+                  </div>
               </div>
               <div class="hei-80"></div>
       </div>
@@ -106,6 +118,8 @@
   </div>
   <!--内容 end-->
 <!--原因 弹出框-->
-
+<!-- <div class="popReason">
+  
+</div> -->
 <!--原因 弹出框 end-->
 </body>

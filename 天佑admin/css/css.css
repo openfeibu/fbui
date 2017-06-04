@@ -507,7 +507,6 @@ transition :all .3s;
 .return-page {
 	width: 100%;
 	height: 40px;
-	padding-left: 67px;
 	
 	line-height: 40px;
 	background:url('../images/icon8.png') no-repeat 43px center ;
@@ -734,17 +733,17 @@ margin-right: 40px;
 	width: 100%;
 	height: 40px;
 	line-height:40px;
-	background: url("../images/line.png") no-repeat center center;
+	background:#f9f9f9 url("../images/line.png") no-repeat center center;
 }
 .publishAct_choseEditCon .item_hand>a {
 	width: 48%;
 	height:40px;
 }
 .publishAct_choseEditCon .item_hand .pen {
-	background: url("../images/delete_03.png") no-repeat center center;
+	background:url("../images/delete_03.png") no-repeat center center;
 }
 .publishAct_choseEditCon .item_hand .transh {
-	background: url("../images/delete_05.png") no-repeat center center;
+	background:url("../images/delete_05.png") no-repeat center center;
 }
 /*选取编辑内容 end*/
 
@@ -1615,4 +1614,167 @@ margin-left: 88px;
 	color: #aaaaaa;
 	text-align: center;
 	line-height: 20px;
+}
+
+/**/
+
+.datachart_div {
+ width: 100%;
+ height: 525px;
+}
+.datatable_div {
+	background: #fff;
+}
+.userdata {
+
+	height: 545px!important;
+}
+.data_table tr{
+	height: 40px;
+}
+.data_table tr:last-child {
+	height: 80px;
+}
+.bg-f1c362-col-ff {
+	background: #f1c362;
+	color: #ffffff;
+	border: 2px solid #f1c362;
+}
+.data_bussDd {
+	font-size: 18px!important;
+	color: #333333;
+	line-height: 50px!important;
+}
+.data_bussDd >span{
+	font-size: 14px!important;
+}
+.data_summary {width: 1000px;
+	margin: 40px auto;
+	margin-top: 0;
+	height: 320px;
+
+	border: 1px solid #dddddd;
+}
+.data_summaryLeft {
+	height: 100%;
+	width: 240px;
+	background: #21c57e;
+	text-align: center;
+}
+.data_summaryLeft >ul {
+	padding-top: 30px;
+	margin: 0 auto;
+}
+.data_summaryLeft >ul li {
+  margin-bottom: 20px;
+ }
+.data_summaryLeft >ul a{
+	color:#666666;
+	font-size: 16px;
+}
+.data_summaryLeft >ul a:hover {
+	color: #ffffff!important;
+}
+.col-fff {
+	color: #ffffff!important;
+}
+.tri {
+	top: 30px;
+	left: 240px;
+}
+.data_summaryRight {
+	width: 690px;
+	height: 100%;
+	margin-left: 280px;
+}
+.data_summaryRight >.top {
+	height: 160px;
+	border-bottom: 1px solid #dddddd;
+	text-align: center;
+}
+.highter {
+	width: 90px;
+	height: 90px;
+	margin: 0 auto;
+}
+.highter_mon {
+	font-size: 16px;
+	color: #21c57e;
+}
+.data_list,
+.datachart_list {
+	text-align: justify;
+
+}
+.data_list:after,
+.datachart_list:after {
+	height: 0;
+	width: 10px;
+	visibility: hidden;
+
+}
+.data_list li {
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    vertical-align: middle;
+    width: 200px;
+    margin-right: 75px;
+    font-size: 14px;
+    padding:10px;
+    padding-left: 0;
+    
+}
+.data_list li >span {
+	float: right;
+}
+.datachart_text {
+	background: #fff;
+	width: 1000px;
+	height: 160px;
+	bottom: 0;
+	left: 0;
+}
+.hei-685 {
+	height: 685px!important;
+}
+.datachart_list {
+	padding-top: 20px;
+	margin: 0 auto;
+}
+.datachart_list li{
+	    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    vertical-align: middle;
+    width: 200px;
+    margin: 0 25px;
+    font-size: 14px;
+    padding:10px;
+    padding-left: 0;
+}
+.datachart_list li >span {
+	float: right;
+}
+.popReason {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: #000;
+}
+.bg-f9 {
+	background: #f9f9f9;
+}
+.pop-txt {
+	width: 320px;
+	height: 145px;
+	background: #f0f0f0;
+	margin：0 auto;
+	border: none;
+	scroll:hidden;
+	resize:none;
+	border-radius: 5px;
 }
