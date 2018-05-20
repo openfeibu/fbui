@@ -1,0 +1,67 @@
+dy, body,div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+section, article, aside, header, footer, nav, dialog, figure {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+input {
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+address, caption, cite, code, dfn, em, th, var, i {
+    font-weight: normal;
+    font-style: normal;
+}
+
+input[type="radio"], input[type="submit"], input[type="rest"], input[type="button"], button, select {
+    cursor: pointer;
+    -webkit-appearance: none;
+    outline: none
+}
+
+input[type="text"], input[type="number"], input[type="tel"], input[type="password"], input[type="submit"], input[type="rest"], input[type="button"], button, textarea { /*-webkit-border-radius:0;*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+a, img {
+    border: 0;
+}
+html{background: #f2f2f2;height: 100%;}
+body{height: 100%;font-size: 0.24rem;}
+#main,#video_welcome,#video_content{width: 100%;height: 100%;overflow:hidden;background: #fff;}
+#video_content{position: absolute;z-index: -1;top: 0;left: 0}
+#byl_video{position: absolute;}
+.video_welcome{width: 100%;height: 100%;}
+.over_img{width: 100%;height: 100%;}
+.over_img img{width: 100%;height: 100%;}
+#canvas{position: absolute;}
